@@ -5,106 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile</title>
+    <link rel="stylesheet" href="profile_styles.css">
 </head>
+
 <body>
-    <img src="robot-reporter.jpg" alt="Picture not found" width="300">
+    <div class="container">
+        <div class="onerow">
+            <img class="img" src="robot-reporter.jpg" alt="Picture not found" width="300">
+            <div class="separate">
+                <header id="header" class="header">
+                    <h1>Koval Daniel</h1>
+                </header>
+                
+                <section class="article">
+                    <article id="article1">
+                        <p><em>My name is Daniel, I am studying in Russian Academy</em></p>
+                    </article>
+                
+                    <article id="article2">
+                            <p><em>I enjoy discovering new things, travelling and programming!</em></p>
+                    </article>
+                </section>
 
-    <header id="header" class="header">
-        <h1>Koval Daniel</h1>
-    </header>
+                <div class="network">
+                    <p><strong>My social networks:</strong></p>
+                    <a href="https://vk.com/danvlak" target="_blank">VKontakte</a>
+                |
+                    <a href="https://www.telegram.me/danvlak" target="_blank">Telegram</a>
+                </div>
+            </div>
+        </div>
 
-    <section>
-        <article id="article1" class="article">
-            <p>My name is <strong>Daniel</strong>, I study in <strong>Russian Academy</strong></p>
-        </article>
+        <hr>
 
-        <article id="article1" class="article">
-                <p>I enjoy discovering <em>new things</em>, <em>travelling</em> and <em>programming</em></p>
-        </article>
-    </section>
-    
-    <hr>
+        <div class="card hobby">
+            <h3>My hobbies:</h3>
+            <ul class="list">
+                <li>Piano</li>
+                <li>Videogames and boardgames</li>
+                <li>Football</li>
+                <li>Programming</li>
+            </ul>
+        </div>
 
-    <header>
-        <h3>My social networks:</h3>
-    </header>
-    
-    <div>
-        <a href="https://vk.com/danvlak" target="_blank">VKontakte</a>
-    |
-        <a href="t.me/danvlak" target="_blank">Telegram</a>
+        <hr>
+
+        <div class="card exp">
+            <h3>My experience:</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Years</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RANEPA</td>
+                        <td>Student</td>
+                        <td>2020-now</td>
+                    </tr>
+                    <tr>
+                        <td>"Litsa" agency</td>
+                        <td>Manager</td>
+                        <td>2020-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Skyeng</td>
+                        <td>Tutor</td>
+                        <td>2022-now</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+            
+        </header>
+        <div class="card label">
+            <h3>Contact me!</h3>
+            <div class="form_row">
+                <div class="label_text">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" placeholder="Type your name">
+                </div>
+                <div class="label_text">
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" placeholder="Type your email">
+                </div>
+            </div>
+            
+            <div class="label_text">
+                <label for="message">Your message:</label>
+                <textarea name="message" id="message" cols="20" rows="5" placeholder="Type your message..."></textarea>
+            </div>
+            <br>
+            <button class="btn" type="submit">Send!</button>
+        </div>
     </div>
-
-    <hr>
-
-    <header>
-        <h3>My hobbies:</h3>
-    </header>
-
-    <div>
-        <ul>
-            <li>Playing the piano</li>
-            <li>Videogames and boardgames</li>
-            <li>Jogging</li>
-            <li>Programming</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <header>
-        <h3>My experience:</h3>
-    </header>
-
-    <div>
-        <table width="400" border="1">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Years</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>RANEPA</td>
-                    <td>Student</td>
-                    <td>2020-now</td>
-                </tr>
-                <tr>
-                    <td>"Litsa" agency</td>
-                    <td>Manager</td>
-                    <td>2020-2021</td>
-                </tr>
-                <tr>
-                    <td>Skyeng</td>
-                    <td>Tutor</td>
-                    <td>2022-now</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <br>
-    <hr>
-
-    <header>
-        <h3>Связаться со мной</h3>
-    </header>
-
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
-    </div>
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea name="message" id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-    <button type="submit">Отправить!</button>
 </body>
 </html>
